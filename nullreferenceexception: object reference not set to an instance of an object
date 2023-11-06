@@ -1,0 +1,18 @@
+null reference exception: object reference not set to an instance of an object
+2023.11.07 화
+체력바 구현하는 도중에 player는 구현이 되었는데 slime의 체력바가 깎이지 않았음
+그러면서 이 오류가 계속 발생하고 쫙쫙쫙 한 8-900개 나왔어
+왜? player랑 enemy랑 난 똑같이 했는데 코드도 비교했는데 전혀 다른게 없었음
+여기서 문제였어
+이게 디버깅인가? 싶은 쾌감
+player는 enemy랑 trigger할 때가 맞는데 enemy는 지금 player의 자식 오브젝트의 needle이랑 trigger해야 하거든
+그래서 찾았어 그렇게 해결하고 성공했지
+void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "PlayerAttack")
+        {
+            Player player = collision.gameObject.GetComponentInParent<Player>();
+            float playerAttack = player.Attack;
+            OnDamaged(playerAttack);
+            Invoke("OffDamaged", 1);
+        }
