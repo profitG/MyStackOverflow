@@ -1,0 +1,5 @@
+2023.11.03
+
+이 오류는 github에서 github desktop으로 파일을 clone 해 올 때 발생
+
+이미 clone을 한 파일이거나 이미 있는 파일이라면 불가능
