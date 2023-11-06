@@ -1,0 +1,11 @@
+CS1593 오류
+
+2023. 10. 30
+    
+    Splash화면에서 Main화면으로 넘어갈 때 splashManager의 nextScene을 불러오려고 했었다. splash스크립트에서 DOTween의 OnComplete를 이용해 전달하려고 했는데 계속 저 오류 발생
+    
+    argument가 1개 계속 이지랄 하다가 결국 찾은게 onComplete ⇒ OnComplete 
+    
+    결국 내 잘못이었음
+    
+    해결
