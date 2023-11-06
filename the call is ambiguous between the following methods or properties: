@@ -1,0 +1,19 @@
+the call is ambiguous between the following methods or properties:
+
+2023. 10. 29
+    
+    Unity로 반짇고리 splash 화면 짤 때 발생
+    
+    DOTween을 사용하기 위해서 무료 asset을 설치하고 코드에 
+    
+    using DG.Tweening;을 해도 입력이 안되었음 그래서 그냥 다운로드 받고
+    
+    Asset폴더에 넣어버렸더니 일단 코드에 빨간줄은 없어짐
+    
+    그래서 해결되었구나 싶었는데 실행을 시켜보니 위의 오류가 뜨면서 실행 안 됨
+    
+    두 가지 중에 모호하다는 걸로 봐서 아마 asset store에서 import한거랑
+    
+    내가 다운받아서 넣은거랑 충돌이 일어나는 것 같았음 그래서 내가 다운 받은 거 지우니까 실행 잘 됨
+    
+    해결
