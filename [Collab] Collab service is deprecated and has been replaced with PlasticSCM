@@ -1,0 +1,5 @@
+[Collab] Collab service is deprecated and has been replaced with PlasticSCM
+3D 프로젝트 만들자마자 걍 오류 겁나 뜨면서 와라라라라
+이건 뭐 local이랑 cloud랑 커넥션이 안맞고 뭐라 그럼
+그래서 홈페이지에서 찾아서 해결함
+(https://docs.unity3d.com/kr/2021.3/Manual/UnityCollaborateTroubleShooting.html) 여기 참고
