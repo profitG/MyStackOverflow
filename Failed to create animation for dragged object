@@ -1,0 +1,6 @@
+Failed to create animation for dragged object
+
+Unity에서 animation을 drag drop 하려고 할 때 발생
+해당 object에 Controller가 없어서 그럼
+Controller 추가 후 정상 작동
+오류 해결
