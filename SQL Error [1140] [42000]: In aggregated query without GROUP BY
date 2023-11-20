@@ -1,0 +1,7 @@
+SQL Error [1140] [42000]: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'dbserver.employee.ssn'; this is incompatible with sql_mode=only_full_group_by
+
+in mySQL 
+SELECT ssn, AVG(salary) from employee;
+여기서 오류 발생
+salary의 avg는 구할 수 있는데 ssn의 대표적인 값을 하나 뽑아낼 수 없기 때문에 오류 발생
+이런건 group by를 사용해서 뽑아야 함
